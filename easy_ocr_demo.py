@@ -5,7 +5,7 @@ ssl._create_default_https_context = ssl._create_unverified_context
 
 reader = easyocr.Reader(['en'])
 
-ii = ['per.png', 'sal.png' ,'sal2.png', 'pur2.png', 's.png']
+ii = ['per.png', 'sal.png' ,'sal2.png', 'pur2.png', 's.png',"p.JPEG"]
 
 
 datas = ''
@@ -30,10 +30,13 @@ for j in ii:
     
     if "purchase"   in op:
         perchecs.append(xx)
-   
-    else:
-       salse.append(xx)    
-              
+    
+    elif  "sales" in op:
+        salse.append(xx)
+    # else:
+    #    salse.append(xx)    
+
+    
               
     print(op)
   
@@ -49,4 +52,4 @@ print(extra,"extra====")
 
 
     
-    
+    # https://www.youtube.com/watch?v=zNeUz8yIEUg    pyment 
